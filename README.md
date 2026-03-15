@@ -12,6 +12,9 @@ npm install env-safeguard
 
 ---
 
+## IMPORTANT
+`NO NEED TO INSTALL dotenv in your NodeJS project`
+
 ## Features
 
 - Validate required environment variables
