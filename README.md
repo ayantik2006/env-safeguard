@@ -12,6 +12,17 @@ npm install env-safeguard
 
 ---
 
+## Features
+
+- Validate required environment variables
+- Detect missing variables
+- Validate data types (`string`, `number`, `boolean`)
+- Generate `.env.example` automatically
+- Clear and readable error messages
+- Lightweight and easy to use
+
+---
+
 ## Usage
 
 ```javascript

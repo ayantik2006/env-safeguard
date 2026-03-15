@@ -1,5 +1,6 @@
 const dotenv = require("dotenv");
 dotenv.config();
+const fs = require("fs");
 
 function checkEnv(envs) {
   const missingVars = [];
@@ -33,6 +34,8 @@ function checkEnv(envs) {
   if (missingVars.length !== 0 || mismatchedDataTypes.length !== 0) {
     console.log("\n❌ Environment validation failed");
     console.log("--------------------------------");
+  } else {
+    generateEnvExample(envs);
   }
 
   if (missingVars.length !== 0) {
@@ -52,8 +55,20 @@ function checkEnv(envs) {
   }
 
   console.log("");
-  
+
   process.exit(1);
+}
+
+function generateEnvExample(envs) {
+  let content = "";
+
+  for (let key in envs) {
+    content += `${key}=\n`;
+  }
+
+  fs.writeFileSync(".env.example", content);
+
+  console.log("✅ .env.example generated successfully");
 }
 
 module.exports = { checkEnv };
