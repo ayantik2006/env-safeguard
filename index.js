@@ -57,9 +57,3 @@ function checkEnv(envs) {
 }
 
 module.exports = { checkEnv };
-
-checkEnv({
-  PORT: "number",
-  MONGO_URI: "string",
-  DEBUG: "boolean"
-});
