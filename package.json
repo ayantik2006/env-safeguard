@@ -1,0 +1,29 @@
+{
+  "name": "env-safeguard",
+  "version": "1.0.0",
+  "description": "A lightweight utility to validate environment variables and prevent runtime errors caused by missing or misconfigured .env values.",
+  "author": "Ayantik Sarkar",
+  "license": "MIT",
+  "type": "commonjs",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ayantik2006/env-safeguard.git"
+  },
+  "keywords": [
+    "env",
+    "environment",
+    "dotenv",
+    "validation",
+    "nodejs",
+    "config",
+    "env-validator",
+    "env-safeguard"
+  ],
+  "scripts": {
+    "test": "echo \"No tests yet\""
+  },
+  "dependencies": {
+    "dotenv": "^17.3.1"
+  }
+}
