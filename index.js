@@ -52,6 +52,14 @@ function checkEnv(envs) {
   }
 
   console.log("");
+  
+  process.exit(1);
 }
 
 module.exports = { checkEnv };
+
+checkEnv({
+  PORT: "number",
+  MONGO_URI: "string",
+  DEBUG: "boolean"
+});
