@@ -1,6 +1,6 @@
 {
   "name": "env-safeguard",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A lightweight utility to validate environment variables and prevent runtime errors caused by missing or misconfigured .env values.",
   "author": "Ayantik Sarkar",
   "license": "MIT",
